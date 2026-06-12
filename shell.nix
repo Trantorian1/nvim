@@ -6,13 +6,22 @@
 }: {
   shell = pkgs.mkShellNoCC {
     packages = with pkgs; [
-      lua-language-server
-      nil
+      super.config.nvim
       neovide
       nerd-fonts.jetbrains-mono
-      super.config.nvim
-      npins
+      ripgrep
+
+      lua-language-server
+      stylua
+
+      nil
+      alejandra
+
       rust
+      taplo
+      fixjson
+
+      npins
     ];
   };
 }

@@ -49,10 +49,21 @@
             gitsigns-nvim
             oil-git-nvim
 
-            oil-nvim
             fidget-nvim
             nvim-lspconfig
             rustaceanvim
+
+            oil-nvim
+            nvim-autopairs
+            blink-cmp
+            luasnip
+            conform-nvim
+            todo-comments-nvim
+            comment-nvim
+            flash-nvim
+            vim-visual-multi
+            neogen
+            nvim-treesitter-context
 
             catppuccin-nvim
             auto-dark-mode-nvim
