@@ -55,6 +55,7 @@
             rainbow-delimiters-nvim
             nvim-scrollbar
             edgy-nvim
+            which-key-nvim
           ];
         };
       };
