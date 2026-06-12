@@ -4,6 +4,18 @@ require("catppuccin").setup({
 		solid = false,
 	},
 	term_colors = true,
+	custom_highlights = function(colors)
+		return {
+			OilGitAdded = { fg = colors.green },
+			OilGitModified = { fg = colors.yellow },
+			OilGitRenamed = { fg = colors.mauve },
+			OilGitUntracked = { fg = colors.blue },
+			OilGitIgnored = { fg = colors.overlay0 },
+			OilGitDeleted = { fg = colors.red },
+			OilGitConflict = { fg = colors.peach },
+			OilGitCopied = { fg = colors.mauve },
+		}
+	end,
 	integrations = {
 		barbar = true,
 		blink_cmp = {
