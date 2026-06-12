@@ -45,6 +45,8 @@
             oil-git-nvim
 
             oil-nvim
+            fidget-nvim
+            nvim-lspconfig
 
             catppuccin-nvim
             auto-dark-mode-nvim
