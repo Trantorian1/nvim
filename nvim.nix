@@ -32,6 +32,11 @@
                 with plugins; [
                   nix
                   lua
+                  rust
+                  json
+                  yaml
+                  toml
+                  c
                 ]
             ))
 
@@ -47,6 +52,7 @@
             oil-nvim
             fidget-nvim
             nvim-lspconfig
+            rustaceanvim
 
             catppuccin-nvim
             auto-dark-mode-nvim

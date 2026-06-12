@@ -1,6 +1,7 @@
 {
   super ? import ./. {},
   pkgs ? super.pkgs,
+  rust ? super.rust,
   ...
 }: {
   shell = pkgs.mkShellNoCC {
@@ -11,6 +12,7 @@
       nerd-fonts.jetbrains-mono
       super.config.nvim
       npins
+      rust
     ];
   };
 }
