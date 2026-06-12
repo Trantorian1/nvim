@@ -87,6 +87,9 @@ vim.o.fillchars = "diff:╱"
 vim.o.spell = true
 vim.o.spelllang = "en"
 
+-- Set to true if you have a Nerd Font installed and selected in the terminal
+vim.g.have_nerd_font = true
+
 -- Neovide-related options
 vim.g.neovide_floating_corner_radius = 0
 vim.g.neovide_floating_shadow = false

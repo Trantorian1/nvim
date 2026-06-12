@@ -54,30 +54,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.hl.on_yank()
 	end,
 })
-
--- Open default tabs on startup
-vim.api.nvim_create_autocmd("VimEnter", {
-	desc = "Open default tabs  on startup",
-	group = vim.api.nvim_create_augroup("kickstart-open-default", { clear = true }),
-	callback = function()
-		if vim.fn.argc() == 0 then
-			-- First tab: empty (this is already open by default)
-
-			-- Second tab: git diff with diffview
-			-- vim.cmd("DiffviewOpen")
-
-			-- Third tab: terminal
-			vim.cmd("tabnew")
-			vim.cmd("term")
-			vim.cmd("set nospell")
-			vim.cmd("file term1")
-			vim.cmd("vspl")
-			vim.cmd("term")
-			vim.cmd("set nospell")
-			vim.cmd("file term2")
-
-			-- Go back to first tab
-			vim.cmd("tabfirst")
-		end
-	end,
-})
