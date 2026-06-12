@@ -19,11 +19,12 @@
           ''
           + (builtins.readFile ./nvim/init.lua);
 
-				packages.myPlugins = with pkgs.vimPlugins; {
+        packages.myPlugins = with pkgs.vimPlugins; {
           start = [
             plenary-nvim
             nvim-web-devicons
             nui-nvim
+            snacks-nvim
 
             (nvim-treesitter.withPlugins (
               plugins:
@@ -53,7 +54,6 @@
             precognition-nvim
             rainbow-delimiters-nvim
             nvim-scrollbar
-            indent-blankline-nvim
             edgy-nvim
           ];
         };

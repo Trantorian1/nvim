@@ -9,6 +9,9 @@ require("catppuccin").setup({
 		blink_cmp = {
 			style = "bordered",
 		},
+		snacks = {
+			enabled = false,
+		},
 		diffview = true,
 		fidget = true,
 		flash = true,
